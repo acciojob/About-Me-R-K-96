@@ -1,1 +1,86 @@
 
+.main-container{
+    /* width:100%; */
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row wrap;
+    margin: 30px;
+    
+    /* padding: 30px; */
+    
+}
+.left{
+    width: 50%;
+}
+.upper{
+    /* width:70%; */
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: 2px solid red;
+
+    
+}
+
+.left2{
+    display: flex;
+    flex-flow: column wrap;
+     justify-content: start;
+     /* align-items: center; */
+     padding-top: 10px;
+     
+    
+}
+.left1 > img{
+    width:150px;
+    justify-content: start;
+    
+}
+
+.right{
+    width: 50%;
+    padding: 20px;
+    
+}
+.s1 ,.s2, .s3, .s4{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.bottom{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    border: 2px solid red;
+}
+
+.container{
+    margin-top: 5px;
+    width: 100%;
+    height: 5px;
+    background-color:lightblue;
+    
+}
+
+.s1 + .container >.progress{
+    width: 95%;
+    height: 100%;
+    background-color: blue;
+}
+.s2 + .container >.progress{
+    width: 90%;
+    height: 100%;
+    background-color: blue;
+}
+.s3 + .container >.progress{
+    width: 99%;
+    height: 100%;
+    background-color: blue;
+}
+.s4 + .container >.progress{
+    width: 93%;
+    height: 100%;
+    background-color: blue;
+}
